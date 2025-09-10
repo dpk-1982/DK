@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primary School Karanpur - Report Card System</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js"></script>
-   <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyD9nE0-yeC5Ms34OKXbxSSfmfscyzUMn_Q",
-    authDomain: "dd1982-54ac7.firebaseapp.com",
-    databaseURL: "https://dd1982-54ac7-default-rtdb.firebaseio.com",
-    projectId: "dd1982-54ac7",
-    storageBucket: "dd1982-54ac7.firebasestorage.app",
-    messagingSenderId: "433562739590",
-    appId: "1:433562739590:web:dab8cfa164455d75404207"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+   
 
 
     <style>
+        // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyD9nE0-yeC5Ms34OKXbxSSfmfscyzUMn_Q",
+  authDomain: "dd1982-54ac7.firebaseapp.com",
+  databaseURL: "https://dd1982-54ac7-default-rtdb.firebaseio.com",
+  projectId: "dd1982-54ac7",
+  storageBucket: "dd1982-54ac7.firebasestorage.app",
+  messagingSenderId: "433562739590",
+  appId: "1:433562739590:web:dab8cfa164455d75404207"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
     
         * {
@@ -301,6 +298,9 @@
             🌟 Welcome to Primary School Karanpur, A place where students learn with joy..!! 🌟
         </div>
     </div>
+
+
+    
 
     <!-- Bottom Marquee -->
     <div class="marquee marquee-bottom">
