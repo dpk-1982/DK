@@ -3797,8 +3797,8 @@
                         const subjectAverage = termCount > 0 ? (subjectTotal / termCount).toFixed(1) : '0.0';
                         
                         if (layout === 'detailed') {
-                            const avgOral = termCount > 0 ? (subjectTotal / termCount / 4).toFixed(1) : '0.0'; // Approximate oral average
-                            const avgWritten = termCount > 0 ? (subjectTotal / termCount * 3 / 4).toFixed(1) : '0.0'; // Approximate written average
+                            const avgOral = subjectTotal // Approximate oral average
+                            const avgWritten = subjectTotal  // Approximate written average
                             tableHTML += `
                                 <td class="border-2 border-gray-800 p-1 text-center font-bold text-blue-600">${avgOral}</td>
                                 <td class="border-2 border-gray-800 p-1 text-center font-bold text-green-600">${avgWritten}</td>
